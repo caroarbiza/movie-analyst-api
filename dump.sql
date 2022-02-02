@@ -40,6 +40,7 @@ CREATE TABLE `movies` (
 
 LOCK TABLES `movies` WRITE;
 /*!40000 ALTER TABLE `movies` DISABLE KEYS */;
+INSERT INTO `movies` VALUES ('Ant-Man','2015',8,'Martin Thomas','TheOne'),('Avengers: Age of Ultron','2015',7,'Mindy Lee','Movies n\' Games'),('Batman vs. Superman','2016',6,'Chris Harris','International Movie Critic'),('Captain America: Civil War','2016',9,'Janet Garcia','MoviesNow'),('Deadpool','2016',9,'Andrew West','MyNextReview'),('Doctor Strange','2016',7,'Anthony Miller','ComicBookHero.com'),('Guardians of the Galaxy','2014',10,'Anthony Miller','ComicBookHero.com'),('Suicide Squad','2016',8,'Robert Smith','The Daily Reviewer'),('Superman: Homecoming','2017',10,'Chris Harris','International Movie Critic'),('Wonder Woman','2017',8,'Martin Thomas','TheOne');
 /*!40000 ALTER TABLE `movies` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -63,6 +64,7 @@ CREATE TABLE `publications` (
 
 LOCK TABLES `publications` WRITE;
 /*!40000 ALTER TABLE `publications` DISABLE KEYS */;
+INSERT INTO `publications` VALUES ('ComicBookHero.com','glyphicon-flash'),('International Movie Critic','glyphicon-fire'),('Movies n\' Games','glyphicon-heart-empty'),('MoviesNow','glyphicon-time'),('MyNextReview','glyphicon-record'),('The Daily Reviewer','glyphicon-eye-open'),('TheOne','glyphicon-globe');
 /*!40000 ALTER TABLE `publications` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,6 +91,7 @@ CREATE TABLE `reviewers` (
 
 LOCK TABLES `reviewers` WRITE;
 /*!40000 ALTER TABLE `reviewers` DISABLE KEYS */;
+INSERT INTO `reviewers` VALUES ('Andrew West','https://s3.amazonaws.com/uifaces/faces/twitter/d00maz/128.jpg','MyNextReview'),('Anthony Miller','https://s3.amazonaws.com/uifaces/faces/twitter/9lessons/128.jpg','ComicBookHero.com'),('Chris Harris','https://s3.amazonaws.com/uifaces/faces/twitter/bungiwan/128.jpg','International Movie Critic'),('Janet Garcia','https://s3.amazonaws.com/uifaces/faces/twitter/grrr_nl/128.jpg','MoviesNow'),('Martin Thomas','https://s3.amazonaws.com/uifaces/faces/twitter/karsh/128.jpg','TheOne'),('Mindy Lee','https://s3.amazonaws.com/uifaces/faces/twitter/laurengray/128.jpg','Movies n\' Games'),('Robert Smith','https://s3.amazonaws.com/uifaces/faces/twitter/angelcolberg/128.jpg','The Daily Reviewer');
 /*!40000 ALTER TABLE `reviewers` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -101,4 +104,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-02-02  9:33:58
+-- Dump completed on 2022-02-02 10:52:01
